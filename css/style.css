@@ -1,0 +1,357 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+/* ==========================Above NavBar Starts =========================================== */
+.aboveNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+background-color: #b2bec3;
+}
+.aboveNav .navul li{
+    list-style: none;
+    padding: 15px;
+
+}
+.aboveNav .navul li a{
+text-decoration: none;
+color: #dfe6e9;
+font-size: 13px;
+}
+.navul {
+    display: flex;
+    flex-direction: row;
+}
+.navul span{
+    color: red;
+    font-size: 15px;
+    font-weight: 900;
+}
+.navul img{
+    width: 30px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.nav2ul {
+    position: absolute;
+    display: none;
+    background-color: #c8d6e5;
+    z-index: 25;
+}
+.nav2ul li{
+    border-bottom: 2px dotted white;
+    border-left: 5px solid #c8d6e5;
+    cursor: pointer;
+}
+.nav2ul li:hover{
+    border-bottom: 2px dotted gray;
+    border-left: 5px solid gray;
+    transition: all .5s ease;
+    background-color: rgba(148, 140, 140,0.6);
+
+}
+.aboveNav .nav2ul li a{
+    color: white;
+    font-weight: 500;
+}
+.navul li:hover .nav2ul {
+    display: block;
+}
+.nav3ul {
+    position: absolute;
+    left: 110px;
+    top: 0px;
+    width: 150px;
+    display: none;
+    background-color: #c8d6e5;
+}
+.nav2ul li:hover .nav3ul{
+    display: block;
+}
+.rightAbove {
+
+}
+.rightAbove ul {
+    display: flex;
+    flex-direction: row;
+}
+.rightAbove ul li {
+    list-style: none;
+    padding: 15px;
+    font-size: 15px;
+}
+.rightAbove ul li a{
+    text-decoration: none;
+    color: #dfe6e9;
+}
+.rightAbove i{
+    padding-right: 5px;
+    color: #222f3e;
+}
+
+
+/* ==========================NavBar Starts =========================================== */
+.navBaar{
+    text-align: center;
+    position: sticky;
+    top: 0;
+    box-shadow: 5px 5px 5px 7px rgb(196, 189, 189);
+}
+.navImage{
+    width: 80px;
+
+}
+.navBaar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.navBaar ul li {
+    list-style: none;
+    padding: 10px;
+margin-bottom: 5px;
+border-radius: 10px;
+cursor: pointer;
+}
+.navBaar ul li:hover{
+    /* background-color: red; */
+}
+.navBaar ul li:hover a{
+font-weight: 600;    
+    color: rgb(196, 3, 3);
+}
+.navBaar ul li a {
+    text-decoration: none;
+    color: red;
+    font-weight: 600;
+}
+.navBaar .badge{
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.imageBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 15px;
+    text-align: center;
+}
+.imageBar1, .imageBar3{
+    visibility: hidden;
+    margin: 0;
+}
+.imageBar3 ul{
+    display: flex;
+    flex-direction: column;
+}
+.imageBar2{
+    text-align: center;
+}
+.imageBar3 i {
+    padding-right: 5px;
+    font-size: 15px;
+    color: #222f3e;
+}
+
+.imageBar1 .flag {
+    width: 25px;
+    padding-bottom: 15px;
+}
+.searchBar{
+    /* display: none; */
+}
+.myBag{
+    display: none;
+}
+.searchBar{
+    position: absolute;
+    background-color: rgb(36, 34, 34);
+    padding: 15px 55px;
+    border-radius: 5px;
+    /* left: 50%; */
+    top: 57px;
+    right: 15px;
+    margin-left: 0;
+    opacity: 0.9;
+
+}
+.searchBar input{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #dff9fb;
+}
+.myBag{
+    width: 30%;
+    background-color: whitesmoke;
+    height: calc(100vh);
+    color: black;
+    box-shadow: -3px 8px 7px 6px gray;
+    position: absolute;
+    top: 0;
+    /* right: -100%; */
+    display: none;
+    transition: all 0.6s ease;
+}
+.myBagActive{
+    display: block;
+
+    right: 0%;
+}
+.myBag h1, .myBag h2{
+    background-color: black;
+    display: inline;
+    width: 100%;
+    color: whitesmoke;
+}
+#bag{
+    background-color: black;
+    padding: 14px;
+    color: gray;
+}
+.myBag h1{
+    padding: 0 30px;
+    font-size: 25px;
+    margin-left: 45px;        
+}
+.myBag h2{
+    font-size: 12px;
+    cursor: pointer;
+    margin-left: 100px;
+}
+.myBag p {
+margin-top: 250px;
+margin-left: 15px;}
+
+
+
+
+
+
+
+
+
+/* ================================ Media Query for tab ================================= */
+@media only screen and (max-width: 768px){
+    .aboveNav{
+        display: none;
+    }
+    .imageBar3{
+        visibility: visible;
+    }
+    .imageBar3 ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .navBar{
+        font-size: 12px;
+        z-index: 10;
+        position: sticky;
+
+
+    }
+    .navBarUl{
+        position: absolute;
+        top: 0;
+        height: calc(100vh);
+        width: 100%;
+        box-shadow: 5px 5px 5px 5px rgb(184, 170, 170);
+        background-color: #b2bec3;
+        left: -120%;
+        transition: all 0.5s ease;
+        z-index: 5;
+    }
+    .navBarUlActive{
+        left: 0;
+    }
+    .navBarUl ul{
+        margin-t6+
+        op: 90px;
+        flex-direction: column;
+                z-index: 11;
+            }
+            .navBarUl ul li{
+                padding: 35px;
+                border-bottom: 2px dotted #dfe6e9;
+                text-align: center;
+    }
+    .navBarUl ul li a{
+        color: #636e72;
+font-size: 1.2rem;
+text-decoration: none;
+}
+.navBarUl ul li a:hover{
+font-size: 18px;
+}
+.imageBar1{
+visibility: visible;
+z-index: 20;
+}
+.line{
+    width: 30px;
+    height: 4px;
+    border-radius: 5px;
+    margin: 4px;
+    background-color: #82878a;
+    margin-left: 15px;
+}
+.line1{
+    margin-top: 15px;
+}
+    .navBarUl .badge{
+        margin-top: 10px;
+        line-height: 25px;
+    }
+    .imageBar {
+    box-shadow: 5px 5px 5px 7px rgb(196, 189, 189);
+
+    }
+    .searchBar{
+        /* position: absolute; */
+        background-color: rgb(36, 34, 34);
+        padding: 15px 55px;
+        border-radius: 5px;
+        /* margin: 15px; */
+        top: 100px;
+        right: 10px;
+        z-index: -0.5;
+
+
+    }
+    .searchBar input{
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #dff9fb;
+    }
+.myBag{
+    width: 70%;
+}
+
+/* ==================================== Nav Bar for Tab =================================== */
+
+
+
+
+
+
+
+
+
+
+/* ================================ Media Query for Cell ================================= */
+@media only screen and (max-width:500px)
+
+
+
+/* ==================================== Nav Bar for Cell =================================== */

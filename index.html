@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wardrobe! Online</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <script src="Js/jquery.js"></script>
+    <script>
+$(document).ready(function() {
+
+$('.imageBar1').click(function(){
+    $('.navBarUl').toggleClass('navBarUlActive');
+});
+
+
+$('.search').click(function(){
+    $('.searchBar').slideToggle(300);
+});
+
+
+$('.Bag').click(function(){
+    $('.myBag').toggleClass('myBagActive');
+});
+
+})
+
+    </script>
+</head>
+<body>
+    <section class="aboveNav">
+        <div class="leftAbove">
+        <ul class="navul">
+            <li><a href="#">Welcome to yours <span> Wardrobe! </span></a></li>
+            <li><a href="About/about.html">About</a></li>
+            <li><a href="Signin/signin.html">Log In <img src="Images/pak.png" class="flag" align="middle" alt=""></a>
+                      </li>
+            <li><a href="Signin/signin.html">Create an Account</a>
+                      </li>
+            <li><a href="Contact Us/contact.html">Contact Us</a>
+                <ul class="nav2ul">
+                    <li><a href="#">Karachi</a>
+                    <ul class="nav3ul">
+                    <li><a href="#">Shahrah-e-Faisal</a></li>
+                    <li><a href="#">M.A Jinnah Road</a></li>
+                    <li><a href="#">Tariq Road</a></li>
+                    <li><a href="#">Gulshan e Iqbal</a></li>
+                    <li><a href="#">Gulistan e Johar</a></li>
+                </ul></li>
+                <li><a href="#">Lahore</a>
+                    <ul class="nav3ul">
+                        <li><a href="#">Gulistan e Johar</a></li>
+                        <li><a href="#">Gulistan e Johar</a></li>
+                        <li><a href="#">M.A Jinnah Road</a></li>
+                        <li><a href="#">Shahrah-e-Faisal</a></li>
+                        <li><a href="#">Shahrah-e-Faisal</a></li>
+                        <li><a href="#">Shahrah-e-Faisal</a></li>
+                        <li><a href="#">Gulshan e Iqbal</a></li>
+                        <li><a href="#">Tariq Road</a></li>
+                    </ul></li>
+                    <li><a href="#">Islamabad</a></li>
+                </ul>
+                </li>
+                </ul> 
+            </div>
+            <div class="rightAbove">
+                <ul>
+                    <li class="Bag"><a href="#"><i class="fas fa-shopping-bag"></i>My Bag</a></li>
+                    <li class="search"><a href="#">  <i class="fas fa-search"></i>Search</a></li>
+                </ul>
+            </div>
+    </section>
+
+<!-- ====================================== Nav Bar =========================================== -->
+<div class="navBaar">
+    <section class="navBar">
+        
+        <div class="imageBar">
+    
+            <div class="imageBar1">
+                <div class="line line1"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+    <div class="imageBar2">        
+    <img src="Images/MainLogo.png" class="navImage" alt="">
+</div>
+<div class="imageBar3">
+    <ul>
+        <li class="Bag"><a href="#"><i class="fas fa-shopping-bag"></i>My Bag</a></li>
+        <li class="search"><a href="#">  <i class="fas  fa-search"></i>Search</a></li>
+    </ul>
+</div>
+        
+</section>
+        <div class="navBarUl">    
+    
+                <ul >
+                    <li><a href="#">New Arrivals <span class="badge"> New</span></a></li>
+                    <li><a href="#">Gents Wear</a></li>
+                    <li><a href="#">Ladies Wear</a></li>
+                    <li><a href="#">Baby Wear</a></li>
+                    <li><a href="#">Baba Wear</a></li>
+                    <li><a href="#">Catalogue</a></li>
+                </ul>
+        </div>
+</div>
+<!-- ============================= Search Bar ============================= -->
+<div class="searchBar">
+    <input type="text" placeholder="search">
+</div>
+
+<!-- ============================================My Bag ============================= -->
+<div class="myBag">
+<div id="bag">
+    <h1>MY BAG</h1>
+<h2 class="Bag">Close</h2>
+</div>
+<p>you have no items in your shopping bag</p>
+</div>
+
+
+</body>
+</html>
