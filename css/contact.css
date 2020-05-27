@@ -1,0 +1,78 @@
+body{
+    
+}
+.Contact {
+    display: flex;
+    flex-direction: row;
+    padding: 100px 0;
+    color: rgba(37, 31, 31,0.7);
+    font-size: 15px;
+    padding-left: 20px;
+    background-color: rgba(199, 192, 192,0.5);
+}
+
+.Contact .leftContact h1{
+margin-bottom: 25px;
+}
+
+.leftContact h3{
+    margin: 30px 10px;
+    text-decoration: underline;
+}
+
+.leftContact h6 {
+    font-size: 15px;
+    margin: 10px 0;
+}
+.leftContact p {
+    font-size: 12px;
+    padding: 0 25px;
+    margin-bottom: 15px;
+}
+
+
+
+/* ====================================== Right Contact ====================================== */
+
+.rightContact {
+    background-color: white;
+    padding: 25px;
+    width: 60%;
+    color: black;
+}
+.rightContact h1 {
+    margin: 25px;
+    margin-bottom: 100px;
+}
+.rightContact p {
+    margin: 15px 0;
+}
+.rightContact button {
+    margin: 20px 0;
+    padding: 10px;
+    border: 2px black solid;
+    color: black;
+    cursor: pointer;
+}
+.rightContact input {
+    border: none;
+    border-bottom:1px solid ;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    text-transform: lowercase;
+}
+
+@media only screen and (max-width: 768px){
+
+    .Contact {
+    flex-direction: column;
+    margin-left: 0px;
+}
+.rightContact{
+    width: 95%;
+    margin-left: 0px;
+}
+
+}
