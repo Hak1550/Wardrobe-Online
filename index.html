@@ -6,6 +6,7 @@
     <title>Wardrobe! Online</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/index.css">
     <script src="Js/jquery.js"></script>
     <script src="Js/jquery.cycle.all.js"></script>
     <script>
@@ -38,14 +39,14 @@ $('.Bag').click(function(){
     </script>
 </head>
 <body>
-    <section class="aboveNav">
+    <section id="top" class="aboveNav">
         <div class="leftAbove">
         <ul class="navul">
             <li><a href="#">Welcome to yours <span> Wardrobe! </span></a></li>
             <li><a href="About/about.html">About</a></li>
             <li><a href="Signin/signin.html">Log In <img src="Images/pak.png" class="flag" align="middle" alt=""></a>
                       </li>
-            <li><a href="Signin/signin.html">Create an Account</a>
+            <li><a href="Signin/signup.html">Create an Account</a>
                       </li>
             <li><a href="Contact Us/contact.html">Contact Us</a>
                 <ul class="nav2ul">
@@ -271,7 +272,7 @@ $('.Bag').click(function(){
 
 <!-- ========================================== Slider =================================== -->
 
-<div class="slider">
+<div  class="slider">
             <img src="Images/slide1.jpg" class="slide" alt="">
             <img src="Images/slide3.jpg" class="slide" alt="">
             <img src="Images/slide4.jpg" class="slide" alt="">
@@ -279,8 +280,91 @@ $('.Bag').click(function(){
 </div>
 
 
+<!-- =========================== Main Page ==================================== -->
+
+<Fieldset class="lfield">
+    <legend class="ladiesLegend">Ladies Wear</legend>
+    <div class="cards">
+
+        <div class="card">
+            <img src="Images/ladycard1.jpg" class="cardImg" alt="">
+            <h1><a href="Products/products.html">Embroded Dresses</a></h1>
+            <button><a href="Products/products.html"> View More </a></button>
+        </div>
+
+        <div class="card">
+            <img src="Images/ladycard3.jpg" alt="" class="cardImg">
+            <h1><a href="Products/products.html">Causal Dress</a></h1>
+            <button><a href="Products/products.html"> View More </a></button>
+        </div>
+
+        <div class="card">
+            <img src="Images/ladycard2.jpg" alt="" class="cardImg">
+            <h1><a href="Products/products.html">Party Wear</a></h1>
+            <button><a href="Products/products.html"> View More </a></button>
+        </div>
 
 
+    </div>
+</Fieldset>
+
+<a href="#top"></a>
+<div class="arrow">
+    <img src="Images/Arrow.png" class="up" alt=""> 
+</div></a>
+
+
+<Fieldset class="gfield">
+    <legend class="gentsLegend">Gents Wear</legend>
+    <div class="cards">
+
+        <div class="card">
+            <img src="Images/gentcard1.jpg" class="cardImg" alt="">
+            <h1><a href="Products/products.html"> Shalwar Kameez </a></h1>
+            <button><a href="Products/products.html"> View More </a></button>
+        </div>
+
+        <div class="card">
+            <img src="Images/gentcard2.jpg" alt="" class="cardImg">
+            <h1><a href="Products/products.html">Suits</h1>
+            <button><a href="Products/products.html"> View More </a></button>
+        </div>
+
+        <div class="card">
+            <img src="Images/gentcard3.jpg" alt="" class="cardImg">
+            <h1><a href="Products/products.html">Party Wear</h1>
+            <button><a href="Products/products.html"> View More </a></button>
+        </div>
+
+
+    </div>
+</Fieldset>
+
+<Fieldset class="kfield">
+    <legend class="kidsLegend"> Kids Wear </legend>
+    <div class="cards">
+
+        <div class="card">
+            <img src="Images/kidcard1.jpg" class="cardImg" alt="">
+            <h1><a href="Products/products.html">Baby Girls Wear</a></h1>
+            <button><a href="Products/products.html"> View More </a></button>
+        </div>
+
+        <div class="card">
+            <img src="Images/kidcard2.jpg" alt="" class="cardImg">
+            <h1><a href="Products/products.html">Baby Boy Wear</a></h1>
+            <button><a href="Products/products.html"> View More </a></button>
+        </div>
+
+        <div class="card">
+            <img src="Images/kidcard3.jpg" alt="" class="cardImg">
+            <h1><a href="Products/products.html">Teen Wear</a></h1>
+            <button><a href="Products/products.html"> View More </a></button>
+        </div>
+
+
+    </div>
+</Fieldset>
 
 
 
@@ -318,6 +402,8 @@ $('.Bag').click(function(){
         <ul>
             <li class="fList2">Customer Service </li>
             <li><a href="Contact Us/contact.html"> Contact Us</a></li>
+            <li><a href="Signin/signin.html"> Log In</a></li>
+            <li><a href="Signin/signup.html"> Sign Up</a></li>
             <li><a href="#"> Delivery & Orders</a></li>
             <li><a href="#"> Return & Exchanges</a></li>
             <li><a href="#"> Terms & Conditions</a></li>

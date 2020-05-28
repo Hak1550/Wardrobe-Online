@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Wardrobe!</title>
+    <title>Login to Wardrobe!</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sign.css">
     <link rel="stylesheet" href="../css/all.css">
-    <link rel="stylesheet" href="../css/aboutus.css">
     <script src="../Js/jquery.js"></script>
     <script>
 $(document).ready(function() {
@@ -34,10 +34,9 @@ $('.Bag').click(function(){
         <div class="leftAbove">
         <ul class="navul">
             <li><a href="../index.html">Welcome to yours <span> Wardrobe! </span></a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="../Signin/signin.html">Log In <img src="../Images/pak.png" class="flag" align="middle" alt=""></a>
-                      </li>
-            <li><a href="../Signin/signup.html">Create an Account</a>
+            <li><a href="../About/about.html">About</a></li>
+            <li><a href="signin.html">Log In <img src="../Images/pak.png" class="flag" align="middle" alt=""></a> </li>
+            <li><a href="#">Create an Account</a>
                       </li>
             <li><a href="../Contact Us/contact.html">Contact Us</a>
                 <ul class="nav2ul">
@@ -85,8 +84,8 @@ $('.Bag').click(function(){
                 <div class="line"></div>
             </div>
     <div class="imageBar2">        
-    <a href="../index.html"><img src="../Images/MainLogo.png" class="navImage" alt=""></a>
-
+        <a href="../index.html"><img src="../Images/MainLogo.png" class="navImage" alt=""></a>
+    
 </div>
 <div class="imageBar3">
     <ul>
@@ -262,53 +261,45 @@ $('.Bag').click(function(){
 <p>you have no items in your shopping bag</p>
 </div>
 
-<!-- =============================== About Us =============================== -->
+<!-- ====================== Sign Up =========================== -->
 
-<section class="aboutSec" >
+<Section class="SignUpPage">
 
-<h1>    We are <span> Wardrobe! online</span> </h1>
+    <h1>create new customer account</h1>
+    
+    <h2>personal information</h2>
+    <hr>
 
-<div class="aboutUs">
-    <div class="about">    
-<img src="../Images/about.jpg" alt="">   
-</div>
-<div class="about">
-    <h3>Our Story</h3>
-    <p>
-        Wardrobe Online was established in 2002 with a unique philosophy to revive the country's cultural heritage and make Shalwar Kameez; the popular wear, and soon became one of the most famous and recognizable clothing brands in South East Asia. <br>
+    <h4>First Name *</h4>
+    <input type="text">
 
-        It expanded its store network to 100+ outlets nationwide. Wardrobe Online has further expanded globally by opening 20 outlets in the UK, Australia, Canada, New Zealand, UAE, Qatar, to name a few. <br>
-        
-        We pride ourselves on being a complete apparel brand that deals in eastern wear, perfumes, footwear and accessories for women and men of all ages. We work in different categories and textures like silk, chiffon, cotton, cambric, lawn and fabrics that suit the season. <br>
-        
-        Our clothing line reflects current fashion trends with modest detailing. Designs are inspired from Renaissance, Aztec, Fusion, Arabian and other aesthetics. <br>
-        
-        From the humble beginnings of a brand that believed in being Soully East, we have moved forward with more decorative touches to our portfolio and have strung together a loyal base of customers all over the world
-</p>
-</div>
-</div>
-</section>
+    <h4>Last Name *</h4>
+    <input type="text">
 
+    <h4>Alternate Email *</h4>
+    <input type="email">
 
+    <h4>Date of Birth *</h4>
+    <input type="date">
 
+    <h4>Martial Status *</h4>
+    <input type="search">
 
+    <h2>Sign In Information </h2>
+    <hr>
 
+    <h4>Email *</h4>
+    <input type="email">
 
+    <h4>Password *</h4>
+    <input type="password">
 
+    <h4>Confirm Password *</h4>
+    <input type="password">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <p class="red">* Reqired Fields</p>
+    <button>create an account</button>
+</Section>
 
 
 
@@ -332,8 +323,8 @@ $('.Bag').click(function(){
         <ul>
             <li class="fList2">Customer Service </li>
             <li><a href="../Contact Us/contact.html"> Contact Us</a></li>
-            <li><a href="../Signin/signin.html"> Log In</a></li>
-            <li><a href="../Signin/signup.html"> Sign Up</a></li>
+            <li><a href="signin.html"> Log In</a></li>
+            <li><a href="#"> Sign Up</a></li>
             <li><a href="#"> Delivery & Orders</a></li>
             <li><a href="#"> Return & Exchanges</a></li>
             <li><a href="#"> Terms & Conditions</a></li>
@@ -344,6 +335,7 @@ $('.Bag').click(function(){
         <ul>
             <li class="fList2">Company </li>
             <li><a href="../About/about.html"> About Us </a></li>
+
             <li>Careers</li>
         </ul>
     </div>
